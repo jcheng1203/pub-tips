@@ -14,4 +14,5 @@ hugo
 cd public && git add --all && git commit -m "Publishing to gh-pages (deploy.sh)"
 
 # publish
-git push origin gh-pages
+remote add upstream https://github.com/jcheng1203/pub-tips.git
+git push upstream gh-pages
