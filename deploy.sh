@@ -1,26 +1,20 @@
-
 #!/bin/sh
 
-# DIR=$(dirname "$0")
-
-# cd $DIR/..
-
-if [[ $(git status -s) ]]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
-
-echo "Deleting old publication"
+# remove previous publication
 rm -rf public
 mkdir public
-git worktree prune
-rm -rf .git/worktrees/public/
 
-echo "Checking out gh-pages branch into public"
-git worktree add -B gh-pages public origin/gh-pages
+# clone gh-pages branch from the local repo into a repo located within "public"
+git clone .git --branch gh-pages public
+  
+# generate
+hugo
+  
+# commit the changes in the clone and push them back to the local gh-pages branch    
+cd public && git add --all && git commit -m "Publishing to gh-pages (deploy.sh)"
 
-# echo "Removing existing files"
+# publish
+# git push origin gh-pages"
 # rm -rf public/*
 
 echo "Generating site"
