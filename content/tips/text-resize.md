@@ -1,7 +1,7 @@
 ---
 title: "Resizing Text"
 date: 2019-04-10T11:55:46-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["PSD", "typography"]
 ---

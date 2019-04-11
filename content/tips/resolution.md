@@ -1,7 +1,7 @@
 ---
 title: "Print Resolution"
 date: 2019-04-10T13:28:32-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["PSD","AI","print"]
 ---
