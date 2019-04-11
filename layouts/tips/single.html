@@ -1,0 +1,23 @@
+{{ define "main" }}
+	<article>
+		<h1>{{ .Title }}</h1>
+		<hr />
+		<div class="tip-fm-grid">
+			<div class="tip-fm-col-1">
+				<i class="fas fa-calendar-alt"></i>
+			</div>
+			<div class="tip-fm-col-2">
+				{{ dateFormat "January 2, 2006" .Date }}
+			</div>
+			<div class="tip-fm-col-1">
+				<i class="fas fa-tags"></i>
+			</div>
+			<div class="tip-fm-col-2">
+				{{ range .Params.tags }}
+					<a class="tags" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+				{{ end }}
+			</div>
+		</div>
+		<div>{{ .Content }}</div>
+	</article>
+{{ end }}
