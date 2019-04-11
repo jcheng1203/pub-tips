@@ -1,0 +1,24 @@
+<nav>
+	<div class="center">
+		<a class="logo" href="{{ .Site.BaseURL }}">
+			<i class="logo fas fa-jedi"></i>
+		</a>
+	</div>
+	<ul class="nav right">
+	{{ $currentPage := . }}
+	{{ range .Site.Menus.main }}
+        <li>
+        	<div class="nav-section {{ if $currentPage.HasMenuCurrent "main" . }}active-section{{ end }}">
+        		<strong><a class="nav-link no-underline" href="{{ .URL }}">{{ .Name }}</a></strong>
+        	</div>
+        	<ul class="nav right">
+				{{ range where $.Site.RegularPages "Section" "tips" }}
+				<li class="nav-page {{ if eq $currentPage.URL .URL }}active-page{{ end }}">
+					<a class="nav-link no-underline" href="{{ .URL }}">{{ .Title }}</a>
+				</li>
+				{{ end }}
+			</ul>
+        </li>
+    {{ end }}
+	</ul>
+</nav>
