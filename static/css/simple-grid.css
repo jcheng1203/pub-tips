@@ -3,7 +3,7 @@
 *** (C) ZACH COLE 2016
 **/
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 /* UNIVERSAL */
 
@@ -21,7 +21,7 @@ body {
 /* ROOT FONT STYLES */
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   color: #333447;
   line-height: 1.5;
 }
@@ -54,8 +54,20 @@ h6 {
 
 p {
   font-size: 1.125rem;
-  font-weight: 200;
+  font-weight: 700;
   line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
 }
 
 /* POSITIONING */
