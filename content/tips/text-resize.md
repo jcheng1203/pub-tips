@@ -13,7 +13,8 @@ The **Type** tool has two main modes:
 <table>
 	<tr>
 		<td class="gray"><strong>Paragraph text</strong></td>
-		<td>You create a box that contains all your text. As the name suggests, use paragraph text when you have multiple line of text (aka paragraphs).</td>
+		<td>You create a box that contains all your text. As the name suggests, use paragraph text when you have multiple lines of text (aka paragraphs).<br/>
+			You must make sure you have the <span class="tool">Type</span> tool selected when you're resizing paragraph text, or else the text will distort.</td>
 	</tr>
 	<tr>
 		<td class="gray"><strong>Point text</strong></td>
@@ -21,6 +22,8 @@ The **Type** tool has two main modes:
 	</tr>
 </table>
 
-You must make sure you have the **Type** tool selected when you're resizing text, or else the text will distort.
+## Troubleshooting Text
 
-[insert example]
+### Help! I typed multiple lines but I can only see the first line.
+
+It's possible that your leading is set to some really high value that's pushing the rest of the lines of text outside of view.
