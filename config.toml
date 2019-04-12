@@ -1,5 +1,17 @@
 baseURL = "https://pub-tips.chenglinks.com/"
 languageCode = "en-us"
 title = "Publications Tips & Tricks"
-sectionPagesMenu = "main"
 summaryLength = 20
+
+[menu]
+	[[menu.main]]
+		identifier = "lessons"
+		name = "Lessons"
+		url = "/lessons/"
+		weight = 1
+
+	[[menu.main]]
+		identifier = "tips"
+		name = "Tips & Tricks"
+		url = "/tips/"
+		weight = 2
