@@ -7,7 +7,7 @@ html, body { height: 100%; }
 
 .grid {
 	display: grid;
-	grid-template-columns: 300px auto;
+	grid-template-columns: 280px auto;
 	grid-gap: 4rem;
 	height: 100%;
 }
