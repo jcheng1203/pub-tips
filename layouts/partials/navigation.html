@@ -1,5 +1,5 @@
 <nav>
-	<div class="center">
+	<div class="right">
 		<a class="logo" href="{{ .Site.BaseURL }}">
 			<i class="logo fas fa-jedi"></i>
 		</a>
@@ -11,7 +11,7 @@
         	<div class="nav-section {{ if $currentPage.HasMenuCurrent "main" . }}active-section{{ end }}">
         		<strong><a class="nav-link no-underline" href="{{ .URL }}">{{ .Name }}</a></strong>
         	</div>
-        	<ul class="nav right">
+        	<ul class="nav">
 				{{ range where $.Site.RegularPages "Section" "tips" }}
 				<li class="nav-page {{ if eq $currentPage.URL .URL }}active-page{{ end }}">
 					<a class="nav-link no-underline" href="{{ .URL }}">{{ .Title }}</a>
@@ -20,5 +20,6 @@
 			</ul>
         </li>
     {{ end }}
-	</ul>
+	</ul><!-- 
+	{{ partial "nav-footer.html" . }} -->
 </nav>
