@@ -2,3 +2,4 @@ baseURL = "https://pub-tips.chenglinks.com/"
 languageCode = "en-us"
 title = "Publications Tips & Tricks"
 sectionPagesMenu = "main"
+summaryLength = 20

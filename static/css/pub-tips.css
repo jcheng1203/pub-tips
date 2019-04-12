@@ -8,7 +8,7 @@ html, body { height: 100%; }
 .grid {
 	display: grid;
 	grid-template-columns: 300px auto;
-	grid-gap: 3rem;
+	grid-gap: 4rem;
 	height: 100%;
 }
 
@@ -27,18 +27,71 @@ article {
 	display: grid;
 	grid-template-columns: 24px auto;
 	grid-column-gap: 5px;
-	grid-row-gap: .5rem;
+	grid-row-gap: .8rem;
+	margin-top: 1rem;
 }
 
 .tip-fm-col-1 { grid-column: 1; }
 .tip-fm-col-2 { grid-column: 2; }
 
+.date {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
 a.tags { 
-	padding: .2rem .4rem;
+	margin-right: .5rem;
+	padding: .1rem .25rem;
 	border: 1px solid #AAA;
 	border-radius: 5px;
+	font-size: 1.2rem;
 	color: #777;
 	text-decoration: none;
+	font-weight: 300;
+}
+
+.fa-calendar-alt, .fa-tags {
+	vertical-align: middle;
+}
+
+/* ----- Article ----- */
+
+article > h1 {
+	border-bottom: .4rem solid #ADCBC3;
+	padding-bottom: .5rem;
+	width: 50%;
+}
+
+.content {
+	margin-top: 3.5rem;
+}
+
+/* ----- Summary ----- */
+
+.summary {
+	margin-bottom: 2rem;
+	padding: 0 2rem 2rem 2rem;
+	border: 1px solid #88A9A8;
+	border-radius: 7px;
+	width: 70%;
+}
+
+.summary-header > a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #2F4858;
+}
+
+.summary-body {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.read-more {
+	display: block;
+	margin-top: 2rem;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #88A9A8;
 }
 
 /* ----- Navigation ----- */
@@ -51,7 +104,7 @@ nav {
 i.logo { 
 	margin-top: 3rem;
 	padding: 0;
-	font-size: 2rem; 
+	font-size: 2.4rem; 
 	color: #486773;
 }
 i.logo:hover { color: #ADCBC3; }
@@ -62,7 +115,7 @@ ul.nav {
 	padding-inline-start: 0;
 }
 
-.active-section { border-right: 5px solid #ADC; }
+.active-section { border-right: 5px solid #ADCBC3; }
 .active-section a:hover { color: #D5EDE0; }
 
 .active-page { border-right: 5px solid #ADCBC3; }
@@ -72,21 +125,27 @@ ul.nav {
 }
 .active-page a:hover { color: #ADCBC3; }
 
-.nav-section, i.logo { padding: 1rem; }
-.nav-page { padding: .25rem 1rem; }
+i.logo, .nav-section { padding: 1rem 2rem; }
+.nav-page { padding: .5rem 2rem; }
 
-a.nav-link { color: #486773; }
-a.nav-link:hover {
+.nav-section a.nav-link { color: #88A9A8; }
+.nav-section a.nav-link:hover {
 	color: #ADCBC3;
 }
 
+.nav-page a.nav-link { color: #486773; }
+.nav-page a.nav-link:hover {
+	color: #2F4858;
+}
+
 .nav-section .nav-link { 
+	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 }
 .nav-page { 
 	font-weight: 300;
-	font-size: 1.25rem;
+	font-size: 1.4rem;
 }
 
 .nav-footer {
@@ -94,7 +153,7 @@ a.nav-link:hover {
 	left: 0;
 	bottom: 0;
 	padding: 1rem;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: 300;
 	text-align: right;
 }
@@ -102,8 +161,9 @@ a.nav-link:hover {
 /* ----- Tables ----- */
 table {
 	border: 1px solid #E1E1E1;
+	font-size: 1.4rem;
 	border-radius: 5px;
-	max-width: 95%;
+	max-width: 90%;
 }
 
 th, td {
@@ -121,22 +181,18 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 	background-color: rgb(213, 237, 224, .5); 
 }
 
-.gray { background-color: #EFEFEF; }
+.gray { 
+	background-color: #EEE; }
+
 
 .u-float-left { float: left; }
 .u-float-right { float: right; }
 
-hr {
-	border-top: 0;
-	border-right: 0;
-	border-left: 0;
-	border-bottom: 1px solid #AAA;
-}
-
 /* ----- Typography ----- */
 
-* {
+html {
   font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
   color: #2F4858;
   line-height: 1.5;
 }
@@ -144,17 +200,17 @@ hr {
 h1, h2, h3, h4, h5, h6 { font-weight: 500; }
 h1 { 
 	margin: 3rem 0 0 0;
-	font-size: 2.5rem; 
+	font-size: 3.6rem; 
 }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.375rem; }
-h4 { font-size: 1.125rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.875rem; }
-p {
-  font-size: 1.125rem;
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.6rem; }
+p, li, a {
+  font-size: 1.6rem;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 strong { font-weight: 500; }
 .extra-strong { font-weight: 700; }
@@ -171,11 +227,12 @@ strong { font-weight: 500; }
 .shortcut { 
 	padding: 0 .4rem;
 	border: 1px solid #88A9A8;
-	border-radius: 10px;
+	border-radius: .4rem;
 	background-color: #EFFCF5;
 	color: #66878D;
 	font-family: 'Roboto Mono';
-	font-size: 1rem;
+	font-size: 1.2rem;
+	vertical-align: text-bottom;
 }
 
 .tool { font-weight: 500; }
@@ -187,4 +244,7 @@ ol {
 
 /* ----- Links ----- */
 
-a.no-underline { text-decoration: none; }
+a.no-underline { 
+	text-decoration: none; 
+	color: #66878D;
+}
