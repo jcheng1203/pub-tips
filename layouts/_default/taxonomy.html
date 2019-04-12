@@ -1,0 +1,10 @@
+{{ define "main" }}
+	<article>
+		<h1 style="{{ if or (eq .Title "Psd") (eq .Title "Ai") }}text-transform: uppercase;{{end}}">{{ .Title }}</h1>
+		<div class="content">
+			{{ range .Pages }}
+				{{ partial "summary.html" . }}
+			{{ end }}
+		</div>
+	</article>
+{{ end }}
