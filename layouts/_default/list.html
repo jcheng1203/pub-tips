@@ -1,8 +1,10 @@
 {{ define "main" }}
 	<article>
-		<h1>{{ .Title }}</h1>
-		{{ range .Site.RegularPages }}
-			<a href="{{ .URL}}">{{ .Title }}</a><br/>
-		{{ end }}
+		<h1 style="{{ if or (eq .Title "Psd") (eq .Title "Ai") }}text-transform: uppercase;{{end}}">{{ .Title }}</h1>
+		<div class="content">
+			{{ range .Site.RegularPages }}
+				{{ partial "summary.html" . }}
+			{{ end }}
+		</div>
 	</article>
 {{ end }}

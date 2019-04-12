@@ -1,12 +1,11 @@
 {{ define "main" }}
 	<article>
 		<h1>{{ .Title }}</h1>
-		<hr />
 		<div class="tip-fm-grid">
 			<div class="tip-fm-col-1">
 				<i class="fas fa-calendar-alt"></i>
 			</div>
-			<div class="tip-fm-col-2">
+			<div class="tip-fm-col-2 date">
 				{{ dateFormat "January 2, 2006" .Date }}
 			</div>
 			<div class="tip-fm-col-1">
@@ -18,6 +17,6 @@
 				{{ end }}
 			</div>
 		</div>
-		<div>{{ .Content }}</div>
+		<div class="content">{{ .Content }}</div>
 	</article>
 {{ end }}
