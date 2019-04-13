@@ -1,25 +1,27 @@
 <nav>
-	<div>
-		<a class="logo" href="{{ .Site.BaseURL }}">
-			<i class="logo fas fa-jedi"></i>
-		</a>
+	<div class="sticky">
+		<header>
+			<a class="logo" href="{{ .Site.BaseURL }}">
+				<i class="logo fas fa-jedi"></i>
+			</a>
+		</header>
+		<ul class="nav">
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
+	        <li>
+	        	<div class="nav-section {{ if $currentPage.IsMenuCurrent "main" . }}active-section{{ end }}">
+	        		<strong><a class="nav-link no-underline" href="{{ .URL }}">{{ .Name }}</a></strong>
+	        	</div>
+	        	<ul class="nav">
+					{{ range where $.Site.RegularPages "Section" .Identifier }}
+					<li class="nav-page {{ if eq $currentPage.URL .URL }}active-page{{ end }}">
+						<a class="nav-link no-underline" href="{{ .URL }}">{{ .Title }}</a>
+					</li>
+					{{ end }}
+				</ul>
+	        </li>
+	    {{ end }}
+		</ul>
 	</div>
-	<ul class="nav">
-	{{ $currentPage := . }}
-	{{ range .Site.Menus.main }}
-        <li>
-        	<div class="nav-section {{ if $currentPage.IsMenuCurrent "main" . }}active-section{{ end }}">
-        		<strong><a class="nav-link no-underline" href="{{ .URL }}">{{ .Name }}</a></strong>
-        	</div>
-        	<ul class="nav">
-				{{ range where $.Site.RegularPages "Section" .Identifier }}
-				<li class="nav-page {{ if eq $currentPage.URL .URL }}active-page{{ end }}">
-					<a class="nav-link no-underline" href="{{ .URL }}">{{ .Title }}</a>
-				</li>
-				{{ end }}
-			</ul>
-        </li>
-    {{ end }}
-	</ul>
 	{{ partial "nav-footer.html" . }}
 </nav>

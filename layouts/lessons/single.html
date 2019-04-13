@@ -10,10 +10,8 @@
 			</div>
 		</div>
 		<div class="content">{{ .Content }}</div>
-		<div class="next-lesson">
-			{{ if .PrevInSection }}
-				Next lesson: <a class="next-lesson-link" href="{{ .PrevInSection.URL }}">{{ .PrevInSection.Title }}</a>
-			{{ end }}
-		</div>
+		{{ if .PrevInSection }}
+			<a class="next-lesson" href="{{ .PrevInSection.URL }}">Next lesson: {{ .PrevInSection.Title }}</a>
+		{{ end }}
 	</article>
 {{ end }}
