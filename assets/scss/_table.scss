@@ -1,0 +1,25 @@
+table {
+  border: 1px solid $table-border-color;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  max-width: 90%;
+}
+
+th {
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid $table-border-color;
+}
+
+td {
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid $table-border-color;
+  font-weight: 300;
+}
+
+tr:last-child {
+  th, td {
+    border-bottom: 0;
+  }
+}

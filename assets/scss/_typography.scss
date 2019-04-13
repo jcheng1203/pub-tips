@@ -1,0 +1,68 @@
+/* ----- Typography ----- */
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  color: $primary-text-color;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  margin: 3rem 0 0 0;
+  font-size: 3.6rem;
+}
+
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+h4, h5, h6 { font-size: 1.6rem; }
+
+p, li, a, td {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* ----- Utilities ----- */
+
+strong { font-weight: 500; }
+.extra-strong { font-weight: 700; }
+.left { text-align: left; }
+.right { text-align: right; }
+.justify { text-align: justify; }
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----- Links ----- */
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color .18s;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+/* ----- Special ----- */
+
+.shortcut {
+  padding: 0 .4rem;
+  border: 1px solid $shortcut-border-color;
+  border-radius: .4rem;
+  background-color: $shortcut-bg-color;
+  color: $shortcut-text-color;
+  font-family: 'Roboto Mono';
+  font-size: 1.2rem;
+  vertical-align: text-bottom;
+}
+
+.tool {
+  font-weight: 500;
+}

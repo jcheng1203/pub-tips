@@ -11,7 +11,7 @@
 		</div>
 		<div class="content">{{ .Content }}</div>
 		{{ if .PrevInSection }}
-			<a class="next-lesson" href="{{ .PrevInSection.URL }}">Next lesson: {{ .PrevInSection.Title }}</a>
+			<a class="button next-lesson" href="{{ .PrevInSection.URL }}">Next lesson: {{ .PrevInSection.Title }}</a>
 		{{ end }}
 	</article>
 {{ end }}
