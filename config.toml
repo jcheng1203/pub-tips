@@ -6,7 +6,7 @@ summaryLength = 20
 [menu]
 	[[menu.main]]
 		identifier = "lessons"
-		name = "Lessons"
+		name = "Photoshop 101"
 		url = "/lessons/"
 		weight = 1
 

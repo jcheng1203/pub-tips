@@ -8,12 +8,20 @@
 			<div class="tip-fm-col-2 date">
 				{{ dateFormat "January 2, 2006" .Date }}
 			</div>
-		</div>
-		<div class="content">{{ .Content }}</div>
-		<div class="next-lesson">
-			{{ if .PrevInSection }}
-				Next lesson: <a class="next-lesson-link" href="{{ .PrevInSection.URL }}">{{ .PrevInSection.Title }}</a>
+			{{ if gt (len .Params.tags) 0 }}
+				<div class="tip-fm-col-1">
+					<i class="fas fa-tags"></i>
+				</div>
+				<div class="tip-fm-col-2">
+					{{ range .Params.tags }}
+						<a class="tags" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+					{{ end }}
+				</div>
 			{{ end }}
 		</div>
+		<div class="content">{{ .Content }}</div>
+		{{ if .PrevInSection }}
+			<a class="button next-lesson" href="{{ .PrevInSection.URL }}">Next lesson: {{ .PrevInSection.Title }}</a>
+		{{ end }}
 	</article>
 {{ end }}

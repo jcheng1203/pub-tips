@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700');
+
+@import 'variables';
+@import 'typography';
+@import 'article-front-matter';
+@import 'table';
+@import 'summary';
+@import 'footer';
+
+/* ----- Grid ----- */
+
+html, body {
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 280px auto;
+  grid-gap: 4rem;
+  height: 100%;
+}
+
+nav {
+  grid-column: 1;
+  height: 100%;
+  background-color: $nav-bg-color;
+}
+
+article {
+  grid-column: 2;
+  max-width: 1000px;
+}
+
+/* ----- Article ----- */
+
+article > h1 {
+  border-bottom: .4rem solid $btn-txt-color;
+  padding-bottom: .5rem;
+  width: 50%;
+}
+
+.content, .next-lesson {
+  margin-top: 3.5rem;
+}
+
+/* ----- Buttons ----- */
+
+a.button {
+  display: inline-block;
+  padding: .8rem 1.5rem;
+  border: 1px solid $btn-bg-color;
+  border-radius: 5px;
+  font-weight: 500;
+  color: $btn-txt-color;
+  transition: all .18s;
+
+  &:hover {
+    color: $btn-hov-txt-color;
+    background-color: $btn-bg-color;
+  }
+}
+
+/* ----- Navigation ----- */
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+i.logo {
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  font-size: 2.4rem;
+  color: $nav-pg-link-color;
+  transition: color .18s;
+}
+
+ul.nav {
+  margin: 0;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.active-section { border-right: 5px solid $nav-active-color; }
+
+.active-page { border-right: 5px solid $nav-active-color;
+  
+  a { font-weight: 500; }
+}
+
+.nav-section {
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+}
+
+.nav-page { padding: .5rem 4.5rem; }
+
+.nav-section a.nav-link {
+  color: $nav-sec-link-color;
+  transition: color .18s;
+ 
+  &:hover { color: $nav-active-color; }
+}
+
+.nav-page a.nav-link:hover, i.logo:hover { color: $nav-active-color; }
+
+.nav-page a.nav-link {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: $nav-pg-link-color;
+  transition: color .18s;
+}
+
+.nav-section .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* ----- Utilities ----- */
+
+.gray { background-color: $table-bg-color; }

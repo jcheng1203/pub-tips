@@ -1,0 +1,27 @@
+.tip-fm-grid {
+  display: grid;
+  grid-template-columns: 24px auto;
+  grid-column-gap: 5px;
+  grid-row-gap: .8rem;
+  margin-top: 1rem;
+}
+
+.tip-fm-col-1 { grid-column: 1; }
+.tip-fm-col-2 { grid-column: 2; }
+.date {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+a.tags {
+  margin-right: .5rem;
+  padding: .1rem .25rem;
+  border: 1px solid $tag-border-color;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: $tag-txt-color;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.fa-calendar-alt, .fa-tags { vertical-align: middle; }

@@ -1,0 +1,24 @@
+.summary {
+  margin-bottom: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  border: 1px solid $summary-border-color;
+  border-radius: 7px;
+  width: 70%;
+}
+
+.summary-header > a {
+  font-weight: 500;
+  color: $primary-text-color;
+}
+
+.summary-body {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.read-more {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
