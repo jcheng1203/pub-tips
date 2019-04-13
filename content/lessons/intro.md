@@ -1,5 +1,5 @@
 ---
-title: "Photoshop 101 - Introduction"
+title: "Introduction"
 date: 2019-04-11T23:09:53-07:00
 draft: false
 author: "Jenny"

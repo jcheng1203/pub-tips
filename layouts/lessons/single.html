@@ -8,6 +8,16 @@
 			<div class="tip-fm-col-2 date">
 				{{ dateFormat "January 2, 2006" .Date }}
 			</div>
+			{{ if gt (len .Params.tags) 0 }}
+				<div class="tip-fm-col-1">
+					<i class="fas fa-tags"></i>
+				</div>
+				<div class="tip-fm-col-2">
+					{{ range .Params.tags }}
+						<a class="tags" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+					{{ end }}
+				</div>
+			{{ end }}
 		</div>
 		<div class="content">{{ .Content }}</div>
 		{{ if .PrevInSection }}
