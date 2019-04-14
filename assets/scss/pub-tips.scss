@@ -35,14 +35,20 @@ article {
 /* ----- Article ----- */
 
 article > h1 {
-  border-bottom: .4rem solid $btn-txt-color;
   padding-bottom: .5rem;
-  width: 50%;
 }
 
-.content, .next-lesson {
-  margin-top: 3.5rem;
+article > hr {
+  display: block;
+  margin-left: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid $btn-txt-color;
+  width: 60%;
 }
+
+.content, .next-lesson { margin-top: 3.5rem; }
 
 /* ----- Buttons ----- */
 

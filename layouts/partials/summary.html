@@ -3,7 +3,11 @@
 		<a href="{{ .URL}}"><h3>{{ .Title }}</h3></a>
 	</div>
 	<div class="summary-body">
-		{{ .Summary }} <span class="ellipsis"> ...</span>
+		{{ if .Params.summary }} 
+			{{ .Params.summary }}
+		{{ else }}
+			{{ .Summary }} <span class="ellipsis"> ...</span>
+		{{ end }}
 		<a class="read-more" href="{{ .URL}}">Read more...</a>
 	</div>
 </div>
