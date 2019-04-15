@@ -104,7 +104,6 @@ ul.nav {
 
 .nav-section a.nav-link {
   color: $nav-sec-link-color;
-  transition: color .18s;
  
   &:hover { color: $nav-active-color; }
 }
