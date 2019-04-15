@@ -4,6 +4,7 @@
 @import 'variables';
 @import 'typography';
 @import 'article-front-matter';
+@import 'quote';
 @import 'table';
 @import 'summary';
 @import 'footer';
@@ -49,6 +50,10 @@ article > hr {
 }
 
 .content, .next-lesson { margin-top: 3.5rem; }
+.content { 
+  margin-bottom: 4rem; 
+  max-width: 90%;
+}
 
 /* ----- Buttons ----- */
 
