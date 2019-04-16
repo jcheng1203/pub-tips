@@ -1,24 +1,34 @@
 .summary {
   margin-bottom: 2rem;
-  padding: 0 2rem 2rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   border: 1px solid $summary-border-color;
   border-radius: 7px;
   width: 70%;
 }
 
-.summary-header > a {
+.summary-header { 
+  margin: 1rem 0; 
+  font-size: 1.6rem;
+}
+
+a.summary-link {
   font-weight: 500;
   color: $primary-text-color;
+
+  &:hover {
+    color: $link-color;
+  }
 }
 
 .summary-body {
+  margin: 1rem 0;
   font-size: 1.4rem;
   font-weight: 300;
 }
 
-.read-more {
+a.read-more {
   display: block;
-  margin-top: 2rem;
+  margin: 1rem 0;
   font-size: 1.4rem;
   text-decoration: none;
 }

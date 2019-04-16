@@ -1,13 +1,13 @@
 <div class="summary">
 	<div class="summary-header">
-		<a href="{{ .URL}}"><h3>{{ .Title }}</h3></a>
+		<a class="summary-link" href="{{ .URL}}">{{ .Title }}</a>
 	</div>
 	<div class="summary-body">
 		{{ if .Params.summary }} 
 			{{ .Params.summary }}
 		{{ else }}
-			{{ .Summary }} <span class="ellipsis"> ...</span>
+			{{ .Summary }}&hellip;
 		{{ end }}
-		<a class="read-more" href="{{ .URL}}">Read more...</a>
+		<a class="read-more" href="{{ .URL}}">Read more</a>
 	</div>
 </div>

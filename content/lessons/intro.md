@@ -10,7 +10,9 @@ summary: "Learn how to create simple designs and edit existing PSD, AI, or InDes
 
 Publications 101 is a series of lessons intended to get you from 0 to serviceable.
 
-By the time you complete the course, you should be able to create and edit simple designs for print and web. Examples:
+By the time you complete the course, you should be able to create and edit simple designs for print and web. 
+
+Examples:
 
 * Announcement image for Propre.
 * Instagram post.

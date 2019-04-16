@@ -3,12 +3,12 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
-  color: $primary-text-color;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
+  color: $primary-text-color;
 }
 
 h1 {
@@ -20,10 +20,17 @@ h2 { font-size: 2.4rem; }
 h3 { font-size: 1.8rem; }
 h4, h5, h6 { font-size: 1.6rem; }
 
-p, li, a, td {
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1.5;
+.content {
+  p, li, td {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $primary-text-color;
+  }
+}
+
+code {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
 }
 
 /* ----- Utilities ----- */
