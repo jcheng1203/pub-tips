@@ -1,6 +1,6 @@
 baseURL = "https://pub-tips.chenglinks.com/"
 languageCode = "en-us"
-title = "Publications Tips & Tricks"
+title = "Publications Resources"
 summaryLength = 20
 
 [menu]
