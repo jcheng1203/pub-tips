@@ -1,7 +1,11 @@
 {{ define "main" }}
 	<article>
 		<h1>{{ .Title }}</h1>
+		<hr/>
 		<div class="content">
+			<div class="list-intro">
+			{{ .Content }}
+			</div>
 			{{ range where .Site.RegularPages "Section" "lessons"}}
 				{{ partial "summary.html" . }}
 			{{ end }}
