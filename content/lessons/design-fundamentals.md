@@ -24,7 +24,7 @@ We will cover four main ideas in this lesson:
 <div class="quote">
 	<div class="quote-content">Composition is the placement or arrangement of visual elements or "ingredients" in a work of art, as distinct from the subject.</div>
 	<div class="quote-credit">
-		Source: <a href="https://en.wikipedia.org/wiki/Composition_(visual_arts)">Wikipedia</a>
+		Composition (visual arts), <a href="https://en.wikipedia.org/wiki/Composition_(visual_arts)">Wikipedia</a>
 	</div>
 </div>
 
@@ -33,8 +33,7 @@ We will cover four main ideas in this lesson:
 <div class="quote">
 	<div class="quote-content">Typography is the visual component of the written word.</div>
 	<div class="quote-credit">
-		Source: Matthew Butterick, 
-		<a href="https://practicaltypography.com/what-is-typography.html"><em>Practical Typography</em></a>
+		Matthew Butterick, <a href="https://practicaltypography.com/what-is-typography.html"><em>Practical Typography</em></a>
 	</div>
 </div>
 
@@ -43,8 +42,7 @@ We will cover four main ideas in this lesson:
 <div class="quote">
 	<div class="quote-content">Color theory is a practical combination of art and science that’s used to determine what colors look good together.</div>
 	<div class="quote-credit">
-		Source:
-		<a href="https://www.canva.com/colors/color-wheel/">Canva</a>
+		Color theory and the color wheel, <a href="https://www.canva.com/colors/color-wheel/">Canva</a>
 	</div>
 </div>
 
