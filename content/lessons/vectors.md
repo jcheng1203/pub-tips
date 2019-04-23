@@ -1,7 +1,7 @@
 ---
 title: "Lesson 6: Vectors"
 date: 2019-04-15T13:59:03-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["AI","Publications 101"]
 weight: 6

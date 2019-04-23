@@ -12,12 +12,12 @@ The **Type** tool has two main modes:
 
 <table>
 	<tr>
-		<td class="gray"><strong>Paragraph text</strong></td>
+		<td class="horiz-th"><strong>Paragraph text</strong></td>
 		<td>You create a box that contains all your text. As the name suggests, use paragraph text when you have multiple lines of text (aka paragraphs).<br/>
 			You must make sure you have the <span class="tool">Type</span> tool selected when you're resizing paragraph text, or else the text will distort.</td>
 	</tr>
 	<tr>
-		<td class="gray"><strong>Point text</strong></td>
+		<td class="horiz-th"><strong>Point text</strong></td>
 		<td>Your type goes on forever on a single line.</td>
 	</tr>
 </table>
