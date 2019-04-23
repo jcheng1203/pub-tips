@@ -5,6 +5,4 @@ draft: false
 author: "Jenny"
 ---
 
-This site is still under construction.
-
-Eventually, it will be the home of various tips & tricks that will help you in all your publications endeavors!
+Whaddya wanna do?

@@ -2,6 +2,22 @@
 	<article>
 		<h1>{{ .Title }}</h1>
 		<hr/>
-		<div class="content">{{ .Content }}</div>
+		<div class="content">
+			{{ .Content }}
+			<div class="home">
+				<div class="portal">
+					<a href="/lessons/">
+						<h3>Publications 101</h3>
+						<p>Publications 101 is a series of lessons intended to get you from 0 to serviceable. By the time you complete the course, you should be able to create and edit simple designs for print and web.</p>
+					</a>
+				</div>
+				<div class="portal">
+					<a href="/tips/">
+						<h3>Tips & Tricks</h3>
+						<p>Get yourself out of a pickle and learn how to work faster and more efficiently in our various publications software.</p>
+					</a>
+				</div>
+			</div>
+		</div>
 	</article>
 {{ end }}

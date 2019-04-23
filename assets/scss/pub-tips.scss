@@ -33,6 +33,27 @@ article {
   max-width: 1000px;
 }
 
+/* ----- Home ----- */
+
+.home {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.6rem;
+}
+
+.portal {
+  width: 300px;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid $summary-border-color;
+  border-radius: 7px;
+  transition: background-color .18s;
+
+  &:hover {
+    background-color: $summary-border-color;
+  }
+}
+
 /* ----- Article ----- */
 
 article > h1 {
