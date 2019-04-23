@@ -23,7 +23,7 @@
 		<div class="content">
 			{{ .Content }}
 			{{ if .PrevInSection }}
-				<a class="button next-lesson" href="{{ .PrevInSection.URL }}">{{ .PrevInSection.Title }}</a>
+				<a class="button next-lesson" href="{{ .PrevInSection.URL }}"><i class="fas fa-angle-double-right"></i> {{ .PrevInSection.Title }}</a>
 			{{ end }}
 		</div>
 	</article>
