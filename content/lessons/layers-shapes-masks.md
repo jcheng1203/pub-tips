@@ -1,7 +1,7 @@
 ---
 title: "Lesson 4: Layers, Shapes, and Masks"
 date: 2019-06-26T12:09:46-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["Publications 101","layers"]
 weight: 5

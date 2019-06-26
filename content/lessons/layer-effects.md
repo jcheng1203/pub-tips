@@ -1,7 +1,7 @@
 ---
 title: "Lesson 5: Masks and Layer Effects"
 date: 2019-06-26T12:23:00-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["Publications 101","layer effects","layer"]
 weight: 6

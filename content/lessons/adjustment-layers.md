@@ -1,7 +1,7 @@
 ---
 title: "Adjustment Layers"
 date: 2019-06-26T15:25:52-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["Publications 101","adjustment layers","photo"]
 weight: 7

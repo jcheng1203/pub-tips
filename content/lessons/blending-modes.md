@@ -1,7 +1,7 @@
 ---
 title: "Blending Modes"
 date: 2019-06-26T15:25:45-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["Publications 101"]
 weight: 7

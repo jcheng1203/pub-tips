@@ -1,7 +1,7 @@
 ---
 title: "Lesson 3: Document Setup"
 date: 2019-06-26T15:51:00-07:00
-draft: true
+draft: false
 author: "Jenny"
 tags: ["Publications 101"]
 weight: 4
