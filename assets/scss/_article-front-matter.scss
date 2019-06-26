@@ -11,6 +11,7 @@
 .date {
   font-size: 1.2rem;
   font-weight: 300;
+  color: $primary-text-color;
 }
 
 a.tags {
@@ -30,4 +31,7 @@ a.tags {
   }
 }
 
-.fa-calendar-alt, .fa-tags { vertical-align: middle; }
+.fa-calendar-alt, .fa-tags { 
+  vertical-align: middle;
+  color: $primary-text-color;
+}

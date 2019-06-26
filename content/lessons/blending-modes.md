@@ -1,10 +1,10 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Blending Modes"
+date: 2019-06-26T15:25:45-07:00
 draft: true
 author: "Jenny"
-tags: []
-weight:
+tags: ["Publications 101"]
+weight: 7
 ---
 
 ## Tools Covered in this Lesson

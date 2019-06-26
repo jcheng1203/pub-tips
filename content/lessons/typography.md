@@ -1,11 +1,11 @@
 ---
-title: "Lesson 3: Type"
+title: "Lesson 5: Typography"
 date: 2019-04-12T12:04:19-07:00
 draft: false
 author: "Jenny"
 tags: ["PSD","Publications 101"]
-weight: 4
-summary: "All about the type tool!"
+weight: 6
+summary: "A deep dive into the Type tool."
 ---
 
 ## Terminology
@@ -14,7 +14,7 @@ summary: "All about the type tool!"
 * **Typeface** is the design of a set of characters.
 * **Font** `= typeface + style + size`.
 
-Professionals can get pretty persnickety about the difference between the two terms, but in this class you can use the terms pretty much interchangeably.
+Professionals can get pretty persnickety about the difference between "font" and "typeface", but in this class you can just use the term "font".
 
 ## Rules of Good Typography
 
